@@ -1,0 +1,16 @@
+{
+    "name": "andaniel/object-collection",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Andy D. Navarro",
+            "email": "andaniel05@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Andaniel05\\ObjectCollection\\": "src/"
+        }
+    }
+}
