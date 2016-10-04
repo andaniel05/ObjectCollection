@@ -1,6 +1,7 @@
 {
     "name": "andaniel05/object-collection",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Andy D. Navarro",

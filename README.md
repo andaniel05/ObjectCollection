@@ -90,6 +90,8 @@ class PersonCollection extends ObjectCollection
     }
 }
 
+// Sobre las instancias de la clase PersonCollection se aplican las mismas
+// operaciones del ejemplo anterior.
 $collection = new PersonCollection;
 
 ```
