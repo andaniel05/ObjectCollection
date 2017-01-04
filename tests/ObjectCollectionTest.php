@@ -113,4 +113,18 @@ class ObjectCollectionTest extends PHPUnit_Framework_TestCase
 
         $this->assertSame($dummy, $collection[0]);
     }
+
+    public function testClearMethod()
+    {
+        $dummy1 = new MyClass;
+        $dummy2 = new MyClass;
+        $collection = $this->getCollection();
+
+        $collection['dummy1'] = $dummy1;
+        $collection['dummy2'] = $dummy2;
+
+        $collection->clear();
+
+        $this->assertEmpty($collection);
+    }
 }

@@ -17,7 +17,7 @@ use Andaniel05\ObjectCollection\Exception\InvalidObjectTypeException;
  * garantiza que el array solo contendrá elementos del tipo especificado.
  *
  * @author Andy D. Navarro Taño <andaniel05@gmail.com>
- * @version 1.0.0
+ * @version 1.0.1
  */
 class ObjectCollection implements \ArrayAccess, \Countable, \IteratorAggregate
 {
@@ -128,5 +128,15 @@ class ObjectCollection implements \ArrayAccess, \Countable, \IteratorAggregate
     public function getIterator()
     {
         return new \ArrayIterator($this->array);
+    }
+
+    /**
+     * Limpia el array de almacenamiento.
+     *
+     * @return null
+     */
+    public function clear()
+    {
+        $this->array = array();
     }
 }
